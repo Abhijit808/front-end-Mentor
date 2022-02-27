@@ -1,0 +1,127 @@
+:root{
+    --main-active-color:#FFFFFF;
+    --side-nav-font-color:#D0D6F9;
+     --bg-color:#0B0D17;
+     --margin-destination:2.3rem;
+     --anchors-padding:1.2rem;
+     --anchors-fontsize:1.5rem;
+     --nav-transition: width 3s cubic-bezier(0.51, 2.14, 1, 1);
+     --transparent-background-color:rgba(255, 255, 255,0.2);
+     --des-font-font-family: 'Bellefair', serif;
+     --main-font-font-family: 'Barlow Condensed', sans-serif;
+}
+.section-info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.content{
+    margin: 11rem auto;
+}
+.wrapper{
+    margin: var(--margin-destination);
+}
+.radio{
+    padding: 0.8em;
+    margin:1rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--transparent-background-color);
+    cursor: pointer;
+}
+.radio:hover{
+   background-color:rgba(255, 255, 255,0.8);
+}
+.radio:visited{
+   background-color:#FFFFFF;
+}
+.radio:focus{
+   background-color:#FFFFFF;
+}
+.radio-button-container{
+    display: flex;
+    /* justify-content: center; */
+    margin: var(--margin-destination);
+}
+.crew-img-div{
+    width: 20rem;
+    margin: auto;
+}
+.crew-img{
+    width: inherit;
+}
+.radio-fill{
+    background-color: #fff;
+}
+.section-paragraph{
+    margin:0 2rem;
+}
+/* table */
+@media screen and (max-width:1126px) {
+    .section-info{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .content{
+        --margin-destination: 6rem 1rem;
+         margin:var(--margin-destination);
+    } 
+    .section-paragraph {
+        width: 93%;
+        text-align: left;
+    }
+    .wrapper{
+        --margin-destination: 6rem 1rem;
+        margin:var(--margin-destination);
+    }
+    .crew-heading{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .des-section-paragraph {
+        margin: 2rem 0;
+        font-size: 1.2rem;
+    }
+    .radio-button-container{
+        justify-content: center;
+        margin: 0;
+    }
+    .crew-img-div {
+        width: 15rem;
+    }
+}
+/* mob */
+@media screen  and (max-width:747px){
+    .section-info{
+       display: flex;
+       flex-direction: column-reverse;
+       margin-top: 3rem;
+    }
+    .content{
+      
+         margin:var(--margin-destination);
+    } 
+    .section-paragraph {
+        width: 93%;
+        text-align:center;
+    }
+    .wrapper{
+       margin: 0%;
+    }
+    .crew-heading{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .des-section-paragraph {
+        margin: 2rem 0;
+    }
+    .radio-button-container{
+        justify-content: center;
+        margin: 0;
+    }
+    .crew-img-div {
+        width: 15rem;
+    }
+    .des-matter{
+        display: flex;
+    flex-direction: column-reverse;
+    }
+}

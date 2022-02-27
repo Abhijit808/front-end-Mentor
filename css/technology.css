@@ -1,0 +1,105 @@
+.radio-button-container{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+}
+.radio{
+    width: 4rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid var(--transparent-background-color);
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: var(--nav-transition);
+}
+.radio:hover{
+    border: 2px solid #fff;
+}
+/* .radio:focus{
+    background-color: #fff;
+    color: #000;
+} */
+.des-matter{
+    display:flex;
+    flex-direction: row-reverse;
+    gap:3rem;
+    align-items:flex-start;
+}
+.section-info{
+    display: flex;
+    gap: 7rem;
+    /* margin: 2rem 0; */
+    justify-content: space-between;
+    /* margin-left: 9rem;   */
+    margin-top: 4rem;
+    align-items: center;
+}
+/* .tech-img-div{
+    width: 25rem;
+    aspect-ratio: 1/1.2;
+    background-image: url("../assets/technology/image-space-capsule-portrait.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.tech-img{
+    width: auto;
+}
+.fill{
+    background-color: #fff;
+    color: #000;
+}
+
+/* i-pad */
+@media screen and (max-width:1126px) {
+    .background-titian-desktop{
+        background-image: url("../assets/technology/background-technology-tablet.jpg");
+    }
+    .section-info{
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    .tech-img-div{
+        width: 100%;
+    }
+    .tech-img{
+        width:100%;
+    }
+ .des-matter{
+     flex-direction: column-reverse;
+     justify-content: center;
+ }
+ .radio-button-container{
+     flex-direction: row;
+     width: 100%;
+ }
+ .section-paragraph{
+     text-align: left;
+     width: 90%;
+     font-size: 1.3rem;
+ }
+ .content {
+    grid-template-columns: none;
+    margin-top: 5rem;
+}
+}
+@media screen  and (max-width:747px){
+
+    .background-titian-desktop{
+        background-image: url("../assets/technology/background-technology-mobile.jpg");
+    }
+    .tech-heading1{
+        text-align: center;
+    }
+    .tech-heading2{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .tech-section-paragraph{
+        margin: 2rem 1rem;
+        width: 17rem;
+    }
+}
